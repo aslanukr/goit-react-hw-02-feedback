@@ -33,7 +33,9 @@ export const FeedbackBtn = styled.button`
         ? 'rgb(58, 189, 35)'
         : p.name === 'neutral'
         ? 'rgb(217, 217, 38)'
-        : 'rgb(248, 97, 71)'};
+        : p.name === 'bad'
+        ? 'rgb(248, 97, 71)'
+        : `grey`};
     color: white;
     border: 1px solid
       ${p =>
@@ -41,7 +43,9 @@ export const FeedbackBtn = styled.button`
           ? 'rgb(58, 189, 35)'
           : p.name === 'neutral'
           ? 'rgb(217, 217, 38)'
-          : 'rgb(248, 97, 71)'};
+          : p.name === 'bad'
+          ? 'rgb(248, 97, 71)'
+          : `grey`};
   }
 `;
 

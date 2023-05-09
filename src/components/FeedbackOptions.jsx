@@ -10,7 +10,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => (
         name={option.toLowerCase()}
         onClick={e => onLeaveFeedback(e.target.name)}
       >
-        {option}
+        {option.charAt(0).toUpperCase() + option.slice(1)}
       </FeedbackBtn>
     ))}
   </ButtonWrapper>
